@@ -1,1 +1,17 @@
-<p>login works!</p>
+<mat-toolbar class="tool-bar">
+    <span>Login</span>
+</mat-toolbar>
+<div class="container">
+    <mat-card class="login-card">
+        <mat-toolbar>
+            <span>Login Tab</span>
+        </mat-toolbar>
+        <form>
+            <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+            </mat-form-field>
+        </form>
+
+    </mat-card>
+</div>
