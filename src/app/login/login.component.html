@@ -6,12 +6,16 @@
         <mat-toolbar>
             <span>Login Tab</span>
         </mat-toolbar>
-        <form>
-            <mat-form-field>
-                <mat-label>Email</mat-label>
-                <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+        <form [formGroup]="registerForm">
+            <mat-form-field class="form-field">
+                <mat-label>Username</mat-label>
+                <input type="text" matInput FormControlName="username" required placeholder="W56511" matInput>
+            </mat-form-field>
+            <mat-form-field class="form-field">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput FormControlName="password" required matInput>
             </mat-form-field>
         </form>
-
+        <button mat-raised-button color="primary">Login</button>
     </mat-card>
 </div>
